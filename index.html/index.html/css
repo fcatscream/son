@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğum Günün Kutlu Olsun
+    </title>
+    <style>
+        /* Gövde Ayarları */
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Kart Tasarımı */
+        .birthday-card {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+        }
+
+        /* Başlık Stili */
+        h1 {
+            font-size: 36px;
+            color: #ff4081;
+            margin-bottom: 10px;
+        }
+
+        /* Paragraf Stili */
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Balon Stilleri */
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background-color: #ff6f91;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: absolute;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .balloon:nth-child(1) {
+            background-color: #ff6f91;
+            left: 15%;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(2) {
+            background-color: #ffc75f;
+            left: 45%;
+            animation-delay: 1s;
+        }
+
+        .balloon:nth-child(3) {
+            background-color: #f9f871;
+            left: 75%;
+            animation-delay: 2s;
+        }
+
+        /* Balonların Animasyonu */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Balonlar -->
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+
+    <!-- Kart -->
+    <div class="birthday-card">
+        <h1> Doğum Günün Kutlu Olsun </h1>
+        <p> Güzeller Güzelim,</p>
+        <p>Hiçbir şey yapamadığım için bunu yapayım dedim. İleride daha güzellerini yapacağım. Sadece doğum gününü değil her gününü güzel geçirmen dileğiyle birtanem</p>
+    </div>
+</body>
+</html>
